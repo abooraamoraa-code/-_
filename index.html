@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة التطبيقات الذكية | قريباً الإطلاق الرسمي</title>
+    <!-- ربط ملف التصميم الخارجي -->
+    <link rel="stylesheet" href="style.css">
+    <!-- خط عربي عصري -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- خلفية شبكية تفاعلية مستوحاة من كويب -->
+    <div class="koyeb-grid-bg"></div>
+    <div class="glow-sphere"></div>
+
+    <!-- الشريط العلوي (Header) -->
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="logo-badge">عربي</span>
+            <h2>إدارة وتطوير ابو العز العمري</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#about" class="nav-link">عن المنصة</a>
+            <a href="#chat" class="nav-link highlight-btn"><i class="fa-solid fa-comments"></i> الانتقال للدردشة</a>
+            <a href="#support" class="nav-link"><i class="fa-solid fa-heart"></i> ادعمنا</a>
+            <a href="#contact" class="nav-link">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <main class="hero-section">
+        <div class="hero-badge">
+            <span class="status-dot"></span> الجيل القادم من هندسة التطبيقات السحابية
+        </div>
+        
+        <h1>نبني مستقبل السحاب الذكي، <br><span class="gradient-text">بين أيديكم قريباً.</span></h1>
+        
+        <p class="hero-description">
+            نحن نضع اللمسات الأخيرة على منصتنا المتكاملة المدعومة بالذكاء الاصطناعي. نظام بيئي متكامل لتوليد، تأمين، ونشر التطبيقات السحابية بسلاسة مطلقة.
+        </p>
+
+        <div class="action-buttons">
+            <!-- زر الانتقال للدردشة (مربوط بطريقة آمنة لا تولد أخطاء) -->
+            <a href="#chat" onclick="openChatInterface(event)" class="btn-primary">
+                <i class="fa-solid fa-robot"></i> ابدأ الدردشة الآن
+            </a>
+            <a href="#support" class="btn-secondary">
+                <i class="fa-solid fa-qrcode"></i> ادعم استمرار المشروع
+            </a>
+        </div>
+    </main>
+
+    <!-- قسم الانتقال للدردشة -->
+    <section id="chat" class="chat-section">
+        <div class="chat-card">
+            <div class="chat-icon-box">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>مساعد الذكاء الاصطناعي والتوليد</h3>
+            <p>انتقل مباشرة إلى واجهة توليد التطبيقات والدردشة التفاعلية واستمتع بتجربة برمجية فريدة.</p>
+            <!-- زر دخول الغرفة بدون أخطاء -->
+            <a href="#chat" onclick="openChatInterface(event)" class="chat-btn">
+                دخول إلى غرفة الدردشة <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- قسم ادعمنا ومحفظة Multichat (مع الباركود الخاص بك بدون إظهار الاسم) -->
+    <section id="support" class="support-section">
+        <div class="section-header">
+            <h2>ادعم تطوير المنصة واستمرارها</h2>
+            <p>إذا أعجبتك المنصة وخدماتها، ساهم معنا بدعم استمرار السيرفرات وتطوير الميزات الجديدة.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="qr-box">
+                <!-- صورة الباركود الخاصة بك التي قمت برفعها باسم wallet-qr.png لتظهر تماماً بدون أسماء أشخاص -->
+                <img src="wallet-qr.png" alt="Barcode Multichat Wallet" class="qr-img">
+            </div>
+            <div class="support-info">
+                <h3>تبرع عبر محفظة Multichat</h3>
+                <p>امسح رمز الاستجابة السريعة (QR) عبر محفظتك لدعم المشروع، ومساعدتنا في تقديم خدمات أفضل وأسرع لجميع المطورين.</p>
+                <div class="wallet-address-box">
+                    <code>Multichat_Wallet_Community_Fund</code>
+                    <button id="copyBtn" class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تواصل معنا (فيسبوك) -->
+    <section id="contact" class="contact-section">
+        <div class="contact-card">
+            <i class="fa-brands fa-facebook-f fb-icon"></i>
+            <h3>تابعنا وتواصل معنا عبر الفيسبوك</h3>
+            <p>ابقَ على اطلاع دائم بآخر التحديثات، الإصدارات التجريبية، والمقالات البرمجية.</p>
+            <!-- رابط فيسبوك الخاص بك مع حماية الـ target لتجنب الأخطاء -->
+            <a href="https://www.facebook.com/profile.php?id=61591794734274&locale=ar_AR" target="_blank" rel="noopener noreferrer" class="fb-btn">
+                زيارة صفحتنا الرسمية <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <main-footer class="main-footer" style="display: block;">
+        <p>&copy; 2026 جميع الحقوق محفوظة - إدارة وتطوير ابو العز العمري.</p>
+    </main-footer>
+
+    <!-- ربط ملف الجافاسكريبت الخارجي -->
+    <script src="script.js"></script>
+    <script>
+        // دالة آمنة لتشغيل زر الدردشة والتوجيه دون أي أخطاء برمجية
+        function openChatInterface(event) {
+            event.preventDefault();
+            // يمكنك توجيهه للرابط الفعلي للدردشة عندما تجهز مسار السيرفر، حالياً سينتقل بقسم الصفحة بسلاسة
+            const chatSection = document.getElementById('chat');
+            if(chatSection) {
+                chatSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            // إذا أردت فتح رابط خارجي للدردشة لاحقاً، استبدل السطر أعلاه برابطك المباشر
+        }
+    </script>
+</body>
+</html>
